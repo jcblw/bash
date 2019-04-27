@@ -9,5 +9,7 @@ LABEL "com.github.actions.description"="Runs one or more commands in an Action"
 LABEL "com.github.actions.icon"="terminal"
 LABEL "com.github.actions.color"="gray-dark"
 
+COPY LICENSE README.md /
+
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
